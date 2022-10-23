@@ -18,3 +18,28 @@ li.innerText = "X-MEN";
 li.classList.add("list-items");
 
 //Remove element
+
+const titleHeader = document.querySelector(".hero-title");
+titleHeader.style.color = "red";
+
+//event listener
+
+// element.addEventListner('click',function);
+
+const buttonTwo = document.querySelector(".btn-2");
+function alertBtn() {
+  alert("I also Love JS!");
+}
+buttonTwo.addEventListener("click", alertBtn);
+
+//mouse over
+
+const newBackgroundColor = document.querySelector(".btn-3");
+
+function changeBgColor() {
+  newBackgroundColor.style.background = "blue";
+}
+
+newBackgroundColor.addEventListener("mouseover", changeBgColor);
+
+// Reveal Event
